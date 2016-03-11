@@ -22,29 +22,29 @@
 
 % This defines how the name looks
 \newcommand{\bigname}[1]{
-    \begin{center}\selectfont\Huge\scshape#1\end{center}
+	\begin{center}\selectfont\Huge\scshape#1\end{center}
 }
 
 % A ressection is a main section (<H1>Section</H1>)
 \newenvironment{ressection}[1]{
-    \vspace{4pt}
-    {\selectfont\Large#1}
-    \begin{itemize}
-    \vspace{3pt}
+	\vspace{4pt}
+	{\selectfont\Large#1}
+	\begin{itemize}
+	\vspace{3pt}
 }{
-    \end{itemize}
+	\end{itemize}
 }
 
 % A resitem is a simple list element in a ressection (first level)
 \newcommand{\resitem}[1]{
-    \vspace{-4pt}
-    \item \begin{flushleft} #1 \end{flushleft}
+	\vspace{-4pt}
+	\item \begin{flushleft} #1 \end{flushleft}
 }
 
 % A ressubitem is a simple list element in anything but a ressection (second level)
 \newcommand{\ressubitem}[1]{
-    \vspace{-1pt}
-    \item \begin{flushleft} #1 \end{flushleft}
+	\vspace{-1pt}
+	\item \begin{flushleft} #1 \end{flushleft}
 }
 
 % A resbigitem is a complex list element for stuff like jobs and education:
@@ -52,28 +52,28 @@
 %  Arg 2: Location
 %  Arg 3: Title and/or date range
 \newcommand{\resbigitem}[3]{
-    \vspace{-5pt}
-    \item
-    \textbf{#1}---#2 \\
-    \textit{#3}
+	\vspace{-5pt}
+	\item
+	\textbf{#1}---#2 \\
+	\textit{#3}
 }
 
 % This is a list that comes with a resbigitem
 \newenvironment{ressubsec}[3]{
-    \resbigitem{#1}{#2}{#3}
-    \vspace{-2pt}
-    \begin{itemize}
+	\resbigitem{#1}{#2}{#3}
+	\vspace{-2pt}
+	\begin{itemize}
 }{
     \end{itemize}
 }
 
 % This is a simple sublist
 \newenvironment{reslist}[1]{
-    \resitem{\textbf{#1}}
-    \vspace{-5pt}
-    \begin{itemize}
+	\resitem{\textbf{#1}}
+	\vspace{-5pt}
+	\begin{itemize}
 }{
-    \end{itemize}
+	\end{itemize}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -94,94 +94,90 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{教育经历}
 
-    \begin{ressubsec}{上海交通大学}{上海}{信息安全工程硕士}
-        \ressubitem{2006.2 -- 2008.12}
-    \end{ressubsec}
+	\begin{ressubsec}{上海交通大学}{上海}{信息安全硕士}
+		\ressubitem{2006.2 -- 2008.12}
+	\end{ressubsec}
 
-    \begin{ressubsec}{上海交通大学}{上海}{电子信息与信息工程学士}
-        \ressubitem{1999.9 -- 2003.7}
-    \end{ressubsec}
+	\begin{ressubsec}{上海交通大学}{上海}{电子信息与信息工程学士}
+		\ressubitem{1999.9 -- 2003.7}
+	\end{ressubsec}
 
-    \begin{ressubsec}{上海华师大二附中}{上海}{高中}
-        \ressubitem{1996.9 -- 1999.6}
-    \end{ressubsec}
+	\begin{ressubsec}{上海华师大二附中}{上海}{高中}
+		\ressubitem{1996.9 -- 1999.6}
+	\end{ressubsec}
 
 \end{ressection}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{工作经历}
 
+	\begin{ressubsec}{EMC}{上海，创智天地}{资深软件工程师: 2014.2 -- 至今}
+						\ressubitem{Trogdor开发团队Leader，管理项目进度，安排团队工作，负责新需求的设计开发，评审成员代码，调查并处理生产环境中发生的各种问题。}
+						\ressubitem{Catalog开发团队Leader，计划项目里程碑，安排团队工作，负责部分Cassandra数据库设计，负责VP架构设计，负责部分模块设计开发，评审成员代码。}
+	\end{ressubsec}
+
 	\begin{ressubsec}{野村信息}{上海，中环广场}{高级软件工程师: 2013.1 -- 2014.1}
-        \ressubitem{对投行Position管理系统各个模块进行开发和维护。分析和解决各种技术问题。}
-		\ressubitem{测试并实施了生产环境的服务器迁移，调查并修正迁移过程中出现的各种问题。}
-		\ressubitem{熟悉银行生产环境更改流程。}
-    \end{ressubsec}
+		\ressubitem{对投行Position管理系统各个模块进行开发和维护。分析和解决各种技术问题。}
+		\ressubitem{领导并实施了生产环境的服务器迁移，调查并修正迁移过程中出现的各种问题。}
+	\end{ressubsec}
 
-    \begin{ressubsec}{SAP Labs China}{上海，张江}{高级软件工程师: 2007.9 -- 2013.1}
-        \ressubitem{负责SAP Business One产品开发。本人所在Inventory Team负责库存模块的开发与维护。}
-		\ressubitem{精通Business Logic，精通SQL，精通C++，能胜任包括界面，Business Object，以及数据库等各种开发需求。}
-        \ressubitem{长期工作于MSSQL的性能调优，熟悉不同业务环境下对数据库各种特殊的性能要求，能够轻松查找SQL以及数据库存储过程中的性能弱点并加以修正。}
-        \ressubitem{工作于基于HANA的Business One产品，工作内容包括高容量高并发并发环境下应用程序以及HANA数据库性能调试与优化。}
-        \ressubitem{了解HANA行存储与列存储的区别。}
-		\ressubitem{熟练使用HANA studio，精通Linux环境，熟悉各种脚本语言。}
-        \ressubitem{精通C\#下ODBC程序的编写，熟悉JAVA下JDBC程序的编写。}
-		\ressubitem{曾获得Fast Learner Award。}
-    \end{ressubsec}
+	\begin{ressubsec}{SAP Labs China}{上海，张江}{高级软件工程师: 2007.9 -- 2013.1}
+		\ressubitem{负责SAP Business One产品开发。本人所在Inventory Team负责库存模块的开发与维护。}
+						\ressubitem{MSSQL的性能调优，熟悉不同业务环境下对数据库各种特殊的性能要求，能够轻松查找SQL以及数据库存储过程中的性能弱点并加以修正。}
+		\ressubitem{工作于基于HANA的Business One产品，工作内容包括高容量高并发并发环境下应用程序以及HANA数据库性能调试与优化。}
+		\ressubitem{熟悉C\#下ODBC程序的编写，熟悉JAVA下JDBC程序的编写。}
+	\end{ressubsec}
 
-    \begin{ressubsec}{智邦科技}{上海，漕河泾}{MPLS \& Multicast组 高级软件工程师: 2006.10 -- 2007.9}
-        \ressubitem{开发、维护和测试混合交换机上的路由协议软件，包括MPLS，LDP以及DVMRP。操作系统是VxWorks，开发语言是C。}
-    \end{ressubsec}
+	\begin{ressubsec}{智邦科技}{上海，漕河泾}{MPLS \& Multicast组 高级软件工程师: 2006.10 -- 2007.9}
+		\ressubitem{开发、维护和测试混合交换机上的路由协议软件，包括MPLS，LDP以及DVMRP。操作系统是VxWorks，开发语言是C。}
+	\end{ressubsec}
 
-    \begin{ressubsec}{鹏越惊虹}{上海，张江}{软件工程师: 2003.7 -- 2006.10}
-        \ressubitem{开发、维护和测试Linux上的网络安全软件。主要开发语言是C/C++，部分配置管理功能用Perl/Bash实现。}
-        \ressubitem{作为第一份工作，我在鹏越打下了扎实的基础。并在业余时间看了大量C++方面的书，包括Effective C++系列和Exceptional C++系列。}
-    \end{ressubsec}
+	\begin{ressubsec}{鹏越惊虹}{上海，张江}{软件工程师: 2003.7 -- 2006.10}
+		\ressubitem{开发、维护和测试Linux上的网络安全软件。主要开发语言是C/C++，部分配置管理功能用Perl/Bash实现。}
+	\end{ressubsec}
 
 \end{ressection}
 
 \begin{ressection}{技能}
 
-    \begin{reslist}{英语:}
-        \ressubitem{大学英语6级}
-		\ressubitem{在工作中能和老外流利沟通。}
-    \end{reslist}
+	\begin{reslist}{英语:}
+		\ressubitem{大学英语6级，熟练交流}
+	\end{reslist}
 
-	\begin{reslist}{日语:}
-        \ressubitem{基本阅读，简单对话。}
-    \end{reslist}
-
-    \begin{reslist}{操作系统:}
-        \ressubitem{多年丰富的Linux研发经验，能胜任用户空间的应用软件和内核协议栈的开发，深入理解Linux进程间通信，系统调用等过程，对OS相关的内容如timer，中断处理，进程调度等有一定的了解。}
+	\begin{reslist}{操作系统:}
+						\ressubitem{多年丰富的Linux研发经验，深入理解Linux进程间通信，系统调用等过程，对OS相关的内容如timer，中断处理，进程调度等有一定的了解。}
 		\ressubitem{1年Solaris环境的研发经验。}
-        \ressubitem{1年VxWorks环境的研发经验，能根据RFC或draft进行协议软件的开发，包括上层UI到底层芯片驱动。}
-        \ressubitem{多年Windows下Visual Studio开发经验。}
-    \end{reslist}
+		\ressubitem{1年VxWorks环境的研发经验，能根据RFC或draft进行协议软件的开发，包括上层UI到底层芯片驱动。}
+		\ressubitem{多年Windows下Visual Studio开发经验。}
+	\end{reslist}
 
-    \begin{reslist}{数据库:}
-		\ressubitem{熟练的SQL编程技巧。}
-        \ressubitem{大量HANA与MSSQL性能调优经验。}
+	\begin{reslist}{数据库:}
+		\ressubitem{熟练的SQL/NOSQL编程技巧。}
+		\ressubitem{熟悉Cassandra数据库设计}
+		\ressubitem{大量HANA与MSSQL性能调优经验。}
 		\ressubitem{1年Oracle使用经验。}
 		\ressubitem{熟练使用各种数据库性能检测工具，如SQL profiler，HANA studio等。}
 		\ressubitem{熟悉JDBC和ODBC。}
-    \end{reslist}
+	\end{reslist}
 
-    \begin{reslist}{计算机语言:}
-        \ressubitem{精通C/C++，能够在软件研发上给予良好建议并帮助别人写出优质代码。}
-		\ressubitem{熟悉各种主流编程语言C\#/JAVA/VB等。}
-        \ressubitem{熟悉Perl和Bash，能独立或以团队方式完成研发任务。}
-        \ressubitem{了解Python，Ruby，汇编和\LaTeX，能读写简单代码。}
-    \end{reslist}
+	\begin{reslist}{计算机语言:}
+		\ressubitem{精通C/C++。}
+		\ressubitem{熟悉各种主流编程语言C\#/JAVA/Golang等。}
+		\ressubitem{熟悉各种脚本语言Perl/Python/Ruby/Bash等。}
+	\end{reslist}
 
-    \begin{reslist}{工具软件:}
-        \ressubitem{熟悉Apache HTTP服务器配置。熟悉ClearCase，Perforce，SVN等版本控制系统和ClearQuest错误追踪系统。熟悉Makefile编写和项目构建过程。}
-        \ressubitem{熟悉SSH，VI等软件}
-    \end{reslist}
+\end{ressection}
+
+\begin{ressection}{其他}
+
+	\begin{reslist}{技术翻译:}
+		\ressubitem{《JavaScript面向对象精要》}
+		\ressubitem{《Python和HDF5大数据应用》}
+	\end{reslist}
 
 \end{ressection}
 
 \end{CJK*}
 
 \end{document}
-
 
