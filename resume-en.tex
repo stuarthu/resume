@@ -5,10 +5,8 @@
 \pagestyle{empty}
 \geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
 
-\setlength{\parindent}{0in}
-\setlength{\parskip}{0in}
-\setlength{\itemsep}{0in}
-\setlength{\topsep}{0in}
+\setlength{\parindent}{0in} \setlength{\parskip}{0in}
+\setlength{\itemsep}{0in} \setlength{\topsep}{0in}
 \setlength{\tabcolsep}{0in}
 
 % Name and contact information
@@ -21,28 +19,29 @@
 
 % This defines how the name looks
 \newcommand{\bigname}[1]{
-    \begin{center}\selectfont\Huge\scshape#1\end{center}
+	\begin{center}\selectfont\Huge\scshape#1\end{center}
 }
 
 % A ressection is a main section (<H1>Section</H1>)
 \newenvironment{ressection}[1]{
-    \vspace{4pt}
-    \begin{itemize}
-    \vspace{3pt}
+	\vspace{4pt}
+	{\selectfont\Large#1}
+	\begin{itemize}
+	\vspace{3pt}
 }{
-    \end{itemize}
+	\end{itemize}
 }
 
 % A resitem is a simple list element in a ressection (first level)
 \newcommand{\resitem}[1]{
-    \vspace{-4pt}
-    \item \begin{flushleft} #1 \end{flushleft}
+	\vspace{-4pt}
+	\item \begin{flushleft} #1 \end{flushleft}
 }
 
 % A ressubitem is a simple list element in anything but a ressection (second level)
 \newcommand{\ressubitem}[1]{
-    \vspace{-1pt}
-    \item \begin{flushleft} #1 \end{flushleft}
+	\vspace{-1pt}
+	\item \begin{flushleft} #1 \end{flushleft}
 }
 
 % A resbigitem is a complex list element for stuff like jobs and education:
@@ -50,31 +49,29 @@
 %  Arg 2: Location
 %  Arg 3: Title and/or date range
 \newcommand{\resbigitem}[3]{
-    \vspace{-5pt}
-    \item
-    \textbf{#1}---#2 \\
-    \textit{#3}
+	\vspace{-5pt}
+	\item
+	\textbf{#1}---#2 \\
+	\textit{#3}
 }
 
 % This is a list that comes with a resbigitem
 \newenvironment{ressubsec}[3]{
-    \resbigitem{#1}{#2}{#3}
-    \vspace{-2pt}
-    \begin{itemize}
+	\resbigitem{#1}{#2}{#3}
+	\vspace{-2pt}
+	\begin{itemize}
 }{
     \end{itemize}
 }
 
 % This is a simple sublist
 \newenvironment{reslist}[1]{
-    \resitem{\textbf{#1}}
-    \vspace{-5pt}
-    \begin{itemize}
+	\resitem{\textbf{#1}}
+	\vspace{-5pt}
+	\begin{itemize}
 }{
-    \end{itemize}
+	\end{itemize}
 }
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Now for the actual document:
@@ -94,92 +91,94 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Education}
 
-    \begin{ressubsec}{Shanghai Jiao Tong University}{Shanghai}{Master of Engineering in Information Security}
-        \ressubitem{2006.2 -- 2008.12}
-    \end{ressubsec}
+	\begin{ressubsec}{Shanghai Jiao Tong University}{Shanghai}{Master of Engineering in Information Security}
+		\ressubitem{2006.2 -- 2008.12}
+	\end{ressubsec}
 
-    \begin{ressubsec}{Shanghai Jiao Tong University}{Shanghai}{Bachelor of Science in Electrical Engineering}
-        \ressubitem{1999.9 -- 2003.7}
-    \end{ressubsec}
-
-    \begin{ressubsec}{Shanghai No.2 Middle School attached to ECNU}{Shanghai}{High School}
-        \ressubitem{1996.9 -- 1999.6}
-    \end{ressubsec}
+	\begin{ressubsec}{Shanghai Jiao Tong University}{Shanghai}{Bachelor of Science in Electrical Engineering}
+		\ressubitem{1999.9 -- 2003.7}
+	\end{ressubsec}
 
 \end{ressection}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%
-\begin{ressection}{Experience}
+\begin{ressection}{Working Experience}
+
+	\begin{ressubsec}{EMC}{Shanghai, KIC}{Principal Software Engineer: 2014.2 -- Now}
+		\ressubitem{Trogdor Team Leader, product full life cycle management, architecture design,
+					design review, code review, bug investigation.}
+		\ressubitem{Trogdor is the backend object storage REST server on cloud.}
+		\ressubitem{Catalog Team Leader, project planning, database design, architecure design,
+					design review, code review.}
+		\ressubitem{Catalog is the backend manifest REST server on cloud.}
+	\end{ressubsec}
 
 	\begin{ressubsec}{Nomura Information Technology}{Shanghai, Central Plaza}{Senior Developer: 2013.1 -- 2014.1}
 		\ressubitem{Develop and maintain the position management system of Nomura Investment Bank.}
-		\ressubitem{Successfully migrated the production environment from UOB to TDC, investigate and fix various issues happened during migration.}
-		\ressubitem{Familiar with bank production environment change request process flow.}
-    \end{ressubsec}
+		\ressubitem{Successfully migrated the production environment from UOB to TDC, investigate and
+					fix various issues happened during migration.}
+	\end{ressubsec}
 
-    \begin{ressubsec}{SAP Labs China}{Shanghai, Zhangjiang}{Application Developer: 2007.9 -- 2013.1}
-        \ressubitem{My work focus on SAP Business One. My team is responsible for inventory module.}
-        \ressubitem{Excellent with Business Logic, excellent with SQL, C++. Can handle any development including UI, Business Object and database.}
-        \ressubitem{Working on MSSQL performance, understand the unique database performance requirements under various business environments.
-		Can easily troubleshoot and fix performance weak points inside SQL or stored procedure.}
-		\ressubitem{Working on Business One For HANA, including application and HANA performance troubleshooting and tuning under high volume high concurrent environment.}
-		\ressubitem{Understand the difference between column store and row store in HANA.}
-        \ressubitem{Familiar with HANA studio. Proficient in Linux, familiar with all kinds of script language.}
-        \ressubitem{Excellent with ODBC programming in C\# and JDBC programming in JAVA.}
-		\ressubitem{Achieve Fast Learner award.}
-    \end{ressubsec}
+	\begin{ressubsec}{SAP Labs China}{Shanghai, Zhangjiang}{Application Developer: 2007.9 -- 2013.1}
+		\ressubitem{Working in inventory module for SAP Business One.}
+		\ressubitem{Excellent on Business Logic and SQL, good at trouble shooting and performance tuning.}
+	\end{ressubsec}
 
-    \begin{ressubsec}{Accton Technology Corp.}{Shanghai, Caohejing}{MPLS \& Multicast Group Senior Software Engineer: 2006.10 -- 2007.9}
-        \ressubitem{Develop, maintain and test protocol software such as MPLS, LDP and DVMRP on hybrid switch. Use pure C on VxWorks.}
-    \end{ressubsec}
+	\begin{ressubsec}{Accton Technology Corp}{Shanghai, Caohejing}{Senior Software Engineer: 2006.10 -- 2007.9}
+		\ressubitem{Develop, maintain and test network protocol software such as MPLS, LDP and DVMRP on
+					hybrid switch. Use pure C on VxWorks.}
+	\end{ressubsec}
 
-    \begin{ressubsec}{Pengyue Jinghong Technology Corp.}{Shanghai, Zhangjiang}{Software Engineer: 2003.7 -- 2006.10}
-        \ressubitem{Develop, maintain and test network security software in Linux.
-        The main develop language is C/C++, part of WEB configuration module implemented with Perl and Bash.}
-        \ressubitem{As my first job, I've built solid C++ skills and
-        studied many good books like Effective C++ series during leisure time.}
-    \end{ressubsec}
+	\begin{ressubsec}{Pengyue Jinghong Technology Corp}{Shanghai, Zhangjiang}{Software Engineer: 2003.7 -- 2006.10}
+		\ressubitem{Develop, maintain and test network security software in Linux. The main develop
+					language is C/C++, part of WEB configuration module implemented with Perl and
+					Bash.}
+	\end{ressubsec}
 
 \end{ressection}
 
-\begin{ressection}{Skills}
+\begin{ressection}{Skill Set}
 
-    \begin{reslist}{English:}
-        \ressubitem{CET Band 6}
-		\ressubitem{Years of communication in job with colleagues from other countries.}
-    \end{reslist}
-	
-	\begin{reslist}{Japanese:}
-		\ressubitem{Basic}
+	\begin{reslist}{English:}
+		\ressubitem{CET Band 6}
 	\end{reslist}
 
-    \begin{reslist}{Operating Systems:}
-        \ressubitem{Years on Linux, proficient both in user space application programming and kernel protocol stack programming, have full understanding of Linux IPC, System Call and many other OS related stuff such as timer, interrupt handling and process scheduling.}
+	\begin{reslist}{Operating System:}
+		\ressubitem{10+ years on Linux, proficient both in user space application programming and kernel
+					protocol stack programming, have full understanding of Linux IPC, System Call and
+					many other OS related stuff such as timer, interrupt handling and process scheduling.}
 		\ressubitem{1 year on Solaris.}
-        \ressubitem{1 year on VxWorks, proficient in protocol software develop based on RFC or draft, with full coding experience from UI support (CLI, WEB, SNMP) to chip driver (using chip vendor SDK).}
-        \ressubitem{Years on Windows with Visual Studio.}
-    \end{reslist}
+		\ressubitem{1 year on VxWorks, proficient in protocol software develop based on RFC or draft, with
+					full coding experience from UI support (CLI, WEB, SNMP) to chip driver (using chip
+					vendor SDK).}
+		\ressubitem{6 years on Windows with Visual Studio.}
+	\end{reslist}
 
-    \begin{reslist}{Database:}
-		\ressubitem{Excellent programming skills for SQL, strong ability in writing and troubleshooting SQL code and store procedure}
-        \ressubitem{Rich experience in Performance Tuning, Query Optimization with MSSQL and HANA.}
-		\ressubitem{1 year on Oracle.}
-		\ressubitem{Excellent with database debuging and profiling. Can easily track the root cause of performance issues.}
-		\ressubitem{Familiar with JDBC and ODBC.}
-    \end{reslist}
+	\begin{reslist}{Database:}
+		\ressubitem{Excellent SQL/NOSQL programming.}
+		\ressubitem{Familliar with Cassandra, ElasticSearch.}
+		\ressubitem{Rich experience in performance tuning, query optimization on various DB systems.}
+	\end{reslist}
 
-    \begin{reslist}{Computer Languages:}
-        \ressubitem{Expert in C/C++, able to give good advice for software development and direct others to perform better quality codes.}
-		\ressubitem{Familiar with C\#/JAVA/VB.}
-        \ressubitem{Proficient in Perl and Bash, able to accomplish tasks under pressure with or without team-work.}
-        \ressubitem{Familiar with Python, Ruby, Assembly and \LaTeX, able to read or write simple codes.}
-    \end{reslist}
+	\begin{reslist}{Computer Languages:}
+		\ressubitem{Expert in C/C++.}
+		\ressubitem{Proficient in Golang/Perl/Python/Ruby/Bash.}
+		\ressubitem{Hands on experience on C\#/JAVA}
+	\end{reslist}
 
-    \begin{reslist}{Tools and Systems:}
-        \ressubitem{Familiar with Apache HTTP server configuration. Familiar with ClearCase Perforce and SVN for version control and ClearQuest for bug tracing. Familiar with Makefile and project building process.}
-        \ressubitem{Familiar with SSH, VI}
-    \end{reslist}
+	\begin{reslist}{Soft Skills:}
+		\ressubitem{Quick to learn new technologies.}
+		\ressubitem{Good at helping team member with technical direction and motivation.}
+	\end{reslist}
+
+\end{ressection}
+
+\begin{ressection}{Other Achievements}
+
+	\begin{reslist}{Technology Translation:}
+		\ressubitem{Principles of Object-Oriented JavaScript}
+		\ressubitem{Python and HDF5}
+	\end{reslist}
 
 \end{ressection}
 
