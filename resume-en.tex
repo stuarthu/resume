@@ -1,9 +1,11 @@
 \documentclass[11pt,oneside]{article}
 \usepackage{geometry}
+\usepackage{hyperref}
 \usepackage[T1]{fontenc}
 
 \pagestyle{empty}
 \geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
+\hypersetup{colorlinks=true,pdfstartview={FitH},urlcolor=red}
 
 \setlength{\parindent}{0in} \setlength{\parskip}{0in}
 \setlength{\itemsep}{0in} \setlength{\topsep}{0in}
@@ -12,7 +14,7 @@
 % Name and contact information
 \newcommand{\name}{Hu Shijie (Stuart Hu)}
 \newcommand{\phone}{Phone: 13917285414}
-\newcommand{\email}{E-mail: stuarthu@gmail.com}
+\newcommand{\email}{E-mail: \href{mailto:stuarthu@gmail.com}{stuarthu@gmail.com}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % New commands and environments
@@ -105,10 +107,10 @@
 \begin{ressection}{Working Experience}
 
 	\begin{ressubsec}{EMC}{Shanghai, KIC}{Principal Software Engineer: 2014.2 -- Now}
-		\ressubitem{Infra Team Leader, main responsibility includes: architecture design, feature design review, code review, bug investigation.}
-		\ressubitem{Implemented weighted disk selection algorithm, make disk less chosen if most disks are down in the same node.}
-		\ressubitem{Enhanced TCP connection reuse performance, increasing server throughput.}
-		\ressubitem{Quickly master new things like S3 object storage protocl, Golang, Cloud Foundry, Cassandra and ElasticSearch, able to explain tech details to team members.}
+		\ressubitem{Mozy Infra Team DEV Leader, lead 2 teams simultaneously, main responsibility includes: architecture design, feature design review, code review, solution investigation, POC research, coaching and managing team members.}
+		\ressubitem{Implemented weighted disk selection algorithm, let a node less chosen if most disks are down in that node.}
+		\ressubitem{Enhanced TCP connection reuse, increasing server throughput.}
+		\ressubitem{Quickly master new things like S3 protocol, Golang, Cloud Foundry, Cassandra and ElasticSearch, able to explain tech details to team members.}
 		\ressubitem{Recognized as CE(consistently exceeds) in KPI review.}
 	\end{ressubsec}
 
@@ -138,13 +140,22 @@
 
 \begin{ressection}{Skill Set}
 
+	\begin{reslist}{Developer Expertise:}
+		\ressubitem{Familiar with distributed system, years of developing, deploying, bug investigation experience.}
+		\ressubitem{Fully understanding of software development life cycle.}
+		\ressubitem{Good at problem solving.}
+		\ressubitem{Good at coaching team members with technical direction and guidance.}
+		\ressubitem{Strong sense of ownership and commitment, proactively jump on new challenges with minimal supervision.}
+	\end{reslist}
+
 	\begin{reslist}{English:}
-		\ressubitem{CET Band 6}
+		\ressubitem{CET Band 6.}
+		\ressubitem{8+ years of working in foreign companies like SAP and EMC, fluent communicating with colleagues overseas.}
 	\end{reslist}
 
 	\begin{reslist}{Operating System:}
-		\ressubitem{10+ years on Linux, proficient both in user space application programming and kernel
-					protocol stack programming, have full understanding of Linux IPC, System Call and
+		\ressubitem{10+ years on Linux, have a deep understanding of Linux architecture,
+                    fully understanding of Linux IPC, System Call and
 					many other OS related stuff such as timer, interrupt handling and process scheduling.}
 		\ressubitem{1 year on Solaris.}
 		\ressubitem{1 year on VxWorks, proficient in protocol software develop based on RFC or draft, with
@@ -159,24 +170,19 @@
 		\ressubitem{Rich experience in performance tuning, query optimization on various DB systems.}
 	\end{reslist}
 
-	\begin{reslist}{Computer Languages:}
+	\begin{reslist}{Programming Languages:}
 		\ressubitem{Expert in C/C++.}
 		\ressubitem{Proficient in Golang/Perl/Python/Ruby/Bash.}
-		\ressubitem{Hands on experience on C\#/JAVA}
-	\end{reslist}
-
-	\begin{reslist}{Soft Skills:}
-		\ressubitem{Quick to learn new technologies.}
-		\ressubitem{Good at helping team member with technical direction and motivation.}
 	\end{reslist}
 
 \end{ressection}
 
 \begin{ressection}{Other Achievements}
 
-	\begin{reslist}{Technology Translation:}
-		\ressubitem{Principles of Object-Oriented JavaScript}
-		\ressubitem{Python and HDF5}
+	\begin{reslist}{Book Translation:}
+        \ressubitem{\href{http://shop.oreilly.com/product/9781593275402.do}{Principles of Object-Oriented JavaScript}}
+        \ressubitem{\href{http://shop.oreilly.com/product/0636920030249.do}{Python and HDF5}}
+%        \ressubitem{\href{http://shop.oreilly.com/product/0636920028963.do}{High Performance Python}}
 	\end{reslist}
 
 \end{ressection}
