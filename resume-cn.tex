@@ -1,5 +1,6 @@
 \documentclass[11pt,oneside]{article}
 \usepackage{geometry}
+\usepackage{hyperref}
 \usepackage[T1]{fontenc}
 
 \usepackage{CJK}
@@ -7,6 +8,7 @@
 
 \pagestyle{empty}
 \geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
+\hypersetup{colorlinks=true,pdfstartview={FitH},urlcolor=red}
 
 \setlength{\parindent}{0in} \setlength{\parskip}{0in}
 \setlength{\itemsep}{0in} \setlength{\topsep}{0in}
@@ -15,7 +17,7 @@
 % Name and contact information
 \newcommand{\name}{胡世杰 (Stuart Hu)}
 \newcommand{\phone}{Phone: 13917285414}
-\newcommand{\email}{E-mail: stuarthu@gmail.com}
+\newcommand{\email}{E-mail: \href{mailto:stuarthu@gmail.com}{stuarthu@gmail.com}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % New commands and environments
@@ -146,7 +148,8 @@
 \begin{ressection}{技能}
 
 	\begin{reslist}{英语:}
-		\ressubitem{大学英语6级，熟练交流}
+		\ressubitem{大学英语6级}
+		\ressubitem{十年以上外企工作经历，熟练的口语和书面交流}
 	\end{reslist}
 
 	\begin{reslist}{操作系统:}
