@@ -1,4 +1,7 @@
-# resume
+# Stuart's personal resume
 
-In order to compile:
-apt-get install latex-cjk-chinese cjk-latex texlive-lang-cjk texlive-fonts-recommended
+## Prerequisite to compile:
+sudo apt install latex-cjk-chinese cjk-latex texlive-lang-cjk texlive-fonts-recommended
+
+## Compile:
+make
