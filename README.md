@@ -1,5 +1,7 @@
 # 胡世杰
 
+!(https://github.com/stuarthu/resume/blob/master/resource/hsj.jpg)
+
 ## 教育经历
 
 | 学校 | 学历 | 日期 |
