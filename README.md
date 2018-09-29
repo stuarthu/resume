@@ -1,6 +1,6 @@
 # 胡世杰
 
-!(https://raw.githubusercontent.com/stuarthu/resume/master/resource/hsj.jpg)
+![胡世杰](https://raw.githubusercontent.com/stuarthu/resume/master/resource/hsj.jpg)
 
 ## 教育经历
 
