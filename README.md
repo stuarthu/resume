@@ -69,6 +69,7 @@
 * [《分布式对象存储——原理、架构及Go语言实现》](https://www.epubit.com/book/detail/35229)
 * [《分布式缓存——原理、架构及Go语言实现》](https://www.epubit.com/book/detail/39324)
 * [牛人说——《分布式对象存储》作者手把手教你写 GO 语言单元测试！](https://mp.weixin.qq.com/s?__biz=MjM5NzAwNDI4Mg==&mid=2652196413&idx=1&sn=49d1a46b5eb2e618ff806e86cf306fe0&chksm=bd0178a88a76f1be0b8f32277826ca7238129d0202ffc1f0d38d54cf159faf02b9ae0068e368&scene=0&key=89d12b870c1b66b5ec43e88c0faf319b337a93be60e7c8c5df07f638b88bd261fcb6d999ba21f36f05ac827acc7eac692cc646d49f8ace1b4f97a83f74afbb2b4f3ed084dd670e72acf9e4f297e0d1ad&ascene=1&uin=MjEzNDk3NjI2MQ%3D%3D&devicetype=Windows+10&version=62060739&lang=zh_CN&pass_ticket=PseL9vQ%2FvE%2FIyMdO6JNVhkQskGYFgovcHIXJMyAXAw74%2FM%2FpWFIAT%2FyjUo31BACt)
+* [牛人说——Etcd和ZooKeeper，究竟谁在watch的功能表现更好？](https://mp.weixin.qq.com/s?__biz=MjM5NzAwNDI4Mg==&mid=2652196648&idx=1&sn=aa43f22f40530ddb98d57d46be62e8f5&chksm=bd0179bd8a76f0ab6f293b33c7835b62171c022dc1142954a0de672916de7e2c88ccb5207364&scene=0&xtrack=1&key=ea0a47f5b68e2b15fcecaa76021ff7af63d7f87a40c59c8dbd036bc83feb60d8983af49b3cd4610202efc59db73494237dd4b45007263ef367a22d419726eb227a616ca2c0adae9ec440124531dfa727&ascene=1&uin=MjEzNDk3NjI2MQ%3D%3D&devicetype=Windows+10&version=62060739&lang=zh_CN&pass_ticket=lngljQjNHjaKs%2BN7P5RV8mDTDd5mXv%2BxcLvdr44y8pkX99xXecsXoIuwxruiGNa7)
 
 ### 技术翻译
 * [《JavaScript面向对象精要》](https://www.epubit.com/book/detail/33175)
