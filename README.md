@@ -20,7 +20,7 @@
 ### 七牛云 - 对象存储技术专家（2018.4 -- 2019.5）
 * 开发七牛私有云NAS协议网关，包括NFS/FTP
 * 开发七牛KODO对象存储的版本管理功能
-* 开发七牛KODO对象存储的S3兼容网关，https://developer.qiniu.com/kodo/manual/4088/s3-access-domainname，在原有的基础上完善了功能，包括完整的Service、Bucket、Object API，虚拟主机域名访问，AWS临时安全凭证等）并将性能提升至跟七牛KODO对象存储一致
+* 开发七牛KODO对象存储的[S3兼容网关](https://developer.qiniu.com/kodo/manual/4088/s3-access-domainname)，在原有的基础上完善了功能，包括完整的Service、Bucket、Object API，虚拟主机域名访问，AWS临时安全凭证等）并将性能提升至跟七牛KODO对象存储一致
 * 在职期间为公司提交专利申请4份，申请号：201810813487.3、201811227621.8、201910124563.4、201910124576.1
 
 ### DELLEMC - 软件主管工程师（2014.2 -- 2018.4）
