@@ -14,8 +14,8 @@
 
 ### 英礴 - 高级软件工程师（2019.5 -- 至今）
 * 将[SpatialOS](https://console.spatialoschina.com)从谷歌GKE移植到中国AWS上搭建的K8S平台，包括容器服务、对象存储、虚拟服务器以及IAM身份管理全部切换至AWS平台，DNS服务切换至Azure中国
-* 创建CICD pipeline，完成生产和测试环境的rollout和发布自动化
-* 在团队内进行知识分享，帮助团队熟悉代码
+* 在[BuildKite](https://buildkite.com)上创建CICD pipeline，让中国区的生产和测试环境的rollout和发布自动化
+* 在China Infra团队内进行知识分享，帮助团队熟悉代码
 
 ### 七牛云 - 对象存储技术专家（2018.4 -- 2019.5）
 * 开发七牛私有云NAS协议网关，包括NFS/FTP
