@@ -12,7 +12,7 @@
 
 ## 工作经历
 
-### 英礴 - 资深架构师（2019.5 -- 2019.11）
+### 英礴 - 资深架构师（2019.5 -- 2020.11）
 * 将[SpatialOS](https://console.spatialoschina.com)从谷歌GKE移植到中国AWS上用[kops](https://github.com/kubernetes/kops)搭建的K8S平台，包括容器服务、对象存储、虚拟服务器以及IAM身份管理全部切换至AWS平台并通过[Terraform](https://www.terraform.io/)管理，DNS服务切换至Azure中国
 * 在[BuildKite](https://buildkite.com)上创建CICD pipeline，让中国区的生产和测试环境的rollout和发布自动化
 * 在China Infra团队内进行知识分享，帮助团队熟悉代码
