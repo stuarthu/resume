@@ -2,9 +2,7 @@
 \usepackage{geometry}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
-
 \usepackage{CJK}
-\begin{CJK*}{UTF8}{gkai}
 
 \pagestyle{empty}
 \geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
@@ -82,6 +80,7 @@
 % Now for the actual document:
 
 \begin{document}
+\begin{CJK}{UTF8}{gkai}
 
 % Name with horizontal rule
 \bigname{\name}
@@ -108,6 +107,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{工作经历}
+
+	\begin{ressubsec}{百度}{上海，张江}{T6: 2020.12 -- 至今}
+		\ressubitem{流式计算平台架构设计和实现。}
+	\end{ressubsec}
 
 	\begin{ressubsec}{英礴}{上海，688广场}{资深架构师: 2019.5 -- 2020.11}
 		\ressubitem{将SpatialOS从谷歌GKE移植到中国AWS上用kops搭建的K8S平台，包括容器服务ECR、对象存储S3、虚拟服务器EC2以及身份管理IAM全部切换至AWS平台并通过Terraform管理，DNS服务切换至Azure中国。}
@@ -198,7 +201,5 @@
 	\end{reslist}
 
 \end{ressection}
-
-\end{CJK*}
-
+\end{CJK}
 \end{document}
