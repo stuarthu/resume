@@ -13,17 +13,19 @@
 ## 工作经历
 
 ### Scopely - 资深devops工程师（2021.7 -- 至今）
-* 将Scopely海外游戏引入中国
-* 从无到有建立Scopely在国内云上开发运行环境，包括AWS云基础设施搭建以及GitLab设置
-* 将AWS ECS上运行的游戏移植到国内的K8S环境，包括云存储、数据库、缓存服务和消息队列的移植
+* 从无到有建立Scopely在国内云上开发运行环境，包括AWS云基础设施搭建以及GitLab实例、runner的搭建，各服务CICD pipeline等
+* 将AWS ECS上运行的游戏移植到国内的[Ucloud K8S](https://www.ucloud.cn)环境，包括云存储、数据库、缓存服务和消息队列的移植
 * 从无到有建立中国工程师团队，负责简历筛选和技术面试
-* 跟中国运营商合作开发登录付费流程
+* 支持国内运营伙伴对游戏后端的运维，帮助处理线上稳定性可扩展性功能性问题
+* 协调国外开发团队，国内开发团队，第三方开发团队，国内运营伙伴之间的沟通，开发
+* 设计并实现国际版和中国版后端代码以及游戏内容合并方案
+* 在vm和k8s上搭建grafana/prometheus指标监控系统，搭建kibana/elasticsearch日志监控系统
 
 ### 百度 - T6（2020.12 -- 2021.6）
 * 推荐技术架构部，负责百度搜索后端架构流式处理时间窗口的设计和研发
 
 ### 英礴 - 资深架构师（2019.5 -- 2020.11）
-* 将[SpatialOS](https://console.spatialoschina.com)从谷歌GKE移植到中国AWS上用[kops](https://github.com/kubernetes/kops)搭建的K8S平台，包括容器服务、对象存储、虚拟服务器以及IAM身份管理全部切换至AWS平台并通过[Terraform](https://www.terraform.io/)管理，DNS服务切换至Azure中国
+* 将SpatialOS从谷歌GKE移植到中国AWS上用[kops](https://github.com/kubernetes/kops)搭建的K8S平台，包括容器服务、对象存储、虚拟服务器以及IAM身份管理全部切换至AWS平台并通过[Terraform](https://www.terraform.io)管理，DNS服务切换至Azure中国
 * 在[BuildKite](https://buildkite.com)上创建CICD pipeline，让中国区的生产和测试环境的rollout和发布自动化
 * 在China Infra团队内进行知识分享，帮助团队熟悉代码
 * 架构、设计并实现了英礴中国账单平台
@@ -56,7 +58,7 @@
 
 ### 研发能力
 * 20多年软件开发经历，熟悉软件开发交付运维部署全流程
-* 从服务端API设计到数据库设计，从后端架构到CICD建设，云基础服务全技术栈打通
+* 从服务端API设计到数据库设计，从后端架构到CICD建设，云基础服务，GitOps全技术栈打通
 * C++/Go等多语言精通
 * 善于且乐于分析和解决问题
 * 丰富的跨时区、跨部门协作经验
@@ -86,12 +88,12 @@
 * 为rocksdb、cert-manager等多个开源项目贡献过代码
 
 ### 写作出版
-* [《分布式对象存储——原理、架构及Go语言实现》](https://www.epubit.com/book/detail/35229)
-* [《分布式缓存——原理、架构及Go语言实现》](https://www.epubit.com/book/detail/39324)
+* [《分布式对象存储——原理、架构及Go语言实现》](https://item.jd.com/28747872962.html)
+* [《分布式缓存——原理、架构及Go语言实现》](https://item.jd.com/37946645240.html)
 * [牛人说——《分布式对象存储》作者手把手教你写 GO 语言单元测试！](https://mp.weixin.qq.com/s?__biz=MjM5NzAwNDI4Mg==&mid=2652196413&idx=1&sn=49d1a46b5eb2e618ff806e86cf306fe0&chksm=bd0178a88a76f1be0b8f32277826ca7238129d0202ffc1f0d38d54cf159faf02b9ae0068e368&scene=0&key=89d12b870c1b66b5ec43e88c0faf319b337a93be60e7c8c5df07f638b88bd261fcb6d999ba21f36f05ac827acc7eac692cc646d49f8ace1b4f97a83f74afbb2b4f3ed084dd670e72acf9e4f297e0d1ad&ascene=1&uin=MjEzNDk3NjI2MQ%3D%3D&devicetype=Windows+10&version=62060739&lang=zh_CN&pass_ticket=PseL9vQ%2FvE%2FIyMdO6JNVhkQskGYFgovcHIXJMyAXAw74%2FM%2FpWFIAT%2FyjUo31BACt)
 * [牛人说——Etcd和ZooKeeper，究竟谁在watch的功能表现更好？](https://mp.weixin.qq.com/s?__biz=MjM5NzAwNDI4Mg==&mid=2652196648&idx=1&sn=aa43f22f40530ddb98d57d46be62e8f5&chksm=bd0179bd8a76f0ab6f293b33c7835b62171c022dc1142954a0de672916de7e2c88ccb5207364&scene=0&xtrack=1&key=ea0a47f5b68e2b15fcecaa76021ff7af63d7f87a40c59c8dbd036bc83feb60d8983af49b3cd4610202efc59db73494237dd4b45007263ef367a22d419726eb227a616ca2c0adae9ec440124531dfa727&ascene=1&uin=MjEzNDk3NjI2MQ%3D%3D&devicetype=Windows+10&version=62060739&lang=zh_CN&pass_ticket=lngljQjNHjaKs%2BN7P5RV8mDTDd5mXv%2BxcLvdr44y8pkX99xXecsXoIuwxruiGNa7)
 
 ### 技术翻译
-* [《JavaScript面向对象精要》](https://www.epubit.com/book/detail/33175)
-* [《Python和HDF5大数据应用》](https://www.epubit.com/book/detail/15126)
-* [《Python高性能编程》](https://www.epubit.com/book/detail/14722)
+* [《JavaScript面向对象精要》](https://item.jd.com/11667775.html)
+* [《Python和HDF5大数据应用》](https://item.jd.com/10057367236235.html)
+* [《Python高性能编程》](https://item.jd.com/10054191907494.html)
