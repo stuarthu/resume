@@ -1,6 +1,3 @@
-all: docker
-	docker run -v $(CURDIR):/work pdflatex pdflatex /work/resume-cn.tex
-	docker run -v $(CURDIR):/work pdflatex pdflatex /work/resume-en.tex
-
-docker:
-	docker build . -t pdflatex
+all:
+	docker run -v $(PWD):/work -w /work sauerburger/pdflatex pdflatex resume-cn.tex
+	docker run -v $(PWD):/work -w /work sauerburger/pdflatex pdflatex resume-en.tex
