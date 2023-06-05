@@ -12,7 +12,12 @@
 
 ## 工作经历
 
-### Scopely - 资深devops工程师（2021.7 -- 至今）
+### Foretellix - 客户集成技术负责人（2022.11 -- 至今）
+* 负责将Foretify软件跟CarMaker, VTD等模拟器进行集成
+* 负责中国区开发云环境的搭建
+* 负责中国客户的集成工作
+
+### Scopely - 资深devops工程师（2021.7 -- 2022.10）
 * 从无到有建立Scopely在国内云上开发运行环境，包括AWS云基础设施搭建以及GitLab实例、runner的搭建，各服务CICD pipeline等
 * 将AWS ECS上运行的游戏移植到国内的[Ucloud K8S](https://www.ucloud.cn)环境，包括云存储、数据库、缓存服务和消息队列的移植
 * 从无到有建立中国工程师团队，负责简历筛选和技术面试
