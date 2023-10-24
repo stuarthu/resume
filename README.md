@@ -100,5 +100,5 @@
 
 ### 技术翻译
 * [《JavaScript面向对象精要》](https://item.jd.com/11667775.html)
-* [《Python和HDF5大数据应用》](https://item.jd.com/10057367236235.html)
+* [《Python和HDF5大数据应用》](https://item.jd.com/10075781721361.html)
 * [《Python高性能编程》](https://item.jd.com/10054191907494.html)
