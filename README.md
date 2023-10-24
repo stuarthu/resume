@@ -12,10 +12,10 @@
 
 ## 工作经历
 
-### Foretellix - 客户集成技术负责人（2022.11 -- 至今）
-* 负责将Foretify软件跟CarMaker, VTD等模拟器进行集成
+### Foretellix - 中国区客户集成技术负责人（2022.11 -- 至今）
+* 负责将Foretify软件跟CarMaker，VTD，51Sim等模拟器进行集成
 * 负责中国区开发云环境的搭建
-* 负责中国客户的集成工作
+* 负责中国客户的软件集成工作
 
 ### Scopely - 资深devops工程师（2021.7 -- 2022.10）
 * 从无到有建立Scopely在国内云上开发运行环境，包括AWS云基础设施搭建以及GitLab实例、runner的搭建，各服务CICD pipeline等
